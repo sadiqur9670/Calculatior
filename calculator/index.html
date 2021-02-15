@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button>Claculator</button>
+        <div class="card">
+            <div class="calc-head">
+                <input type="text" id="result" maxlength="10">
+            </div>
+            <div class="calc-body">
+                <div>
+                    <input type="button" class="btn" value="C" onclick="clearAll()">
+                    <input type="button" class="btn" value="CA">
+                    <input type="button" class="btn" value="%" onclick="persent()">
+                    <input type="button" class="btn btn-style" value="/" onclick="insartNumber('/')">
+                </div>
+                <div>
+                    <input type="button" class="btn" value="1" onclick="insartNumber(1)">
+                    <input type="button" class="btn" value="2" onclick="insartNumber(2)">
+                    <input type="button" class="btn" value="3" onclick="insartNumber(3)">
+                    <input type="button" class="btn btn-style" value="*" onclick="insartNumber('*')">
+                </div>
+                <div>
+                    <input type="button" class="btn" value="4" onclick="insartNumber(4)">
+                    <input type="button" class="btn" value="5" onclick="insartNumber(5)">
+                    <input type="button" class="btn" value="6" onclick="insartNumber(6)">
+                    <input type="button" class="btn btn-style" value="-" onclick="insartNumber('-')">
+                </div>
+                <div>
+                    <input type="button" class="btn" value="7" onclick="insartNumber(7)">
+                    <input type="button" class="btn" value="8" onclick="insartNumber(8)">
+                    <input type="button" class="btn" value="9" onclick="insartNumber(9)">
+                    <input type="button" class="btn btn-style" value="+" onclick="insartNumber('+')">
+                </div>
+                <div>
+                    <input type="button" class="btn" value="0" onclick="insartNumber(0)">
+                    <input type="button" class="btn" value="." onclick="insartNumber('.')">
+                    <input type="button" class="btn" value="DEL" onclick="deleteNumber()">
+                    <input type="button" class="btn" style="background-color: orange;" value="=" onclick="calculate()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery3.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
